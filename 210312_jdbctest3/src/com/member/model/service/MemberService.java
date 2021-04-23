@@ -21,9 +21,6 @@ public class MemberService {
 	private MemberDao dao = new MemberDao();
 
 	
-	
-	
-	
 	public List<Member> selectAll() {
 		
 		// 공통적으로 필요한 부분을 

@@ -2,12 +2,12 @@ package com.member.view;
 
 import java.util.Scanner;
 
+import com.member.controller.BoardController;
 import com.member.controller.Controller;
-import com.member.controller.MemberController;
 
 public class View {
 	
-	private MemberController mc = new MemberController();
+	private BoardController bc = new BoardController();
 
 	public void mainMenu(Controller c) {
 		
@@ -26,7 +26,11 @@ public class View {
 			switch(cho) {
 			
 				case 1: 
-					mc.mainMenu();
+					System.out.println("공사중...");
+				break;
+				
+				case 2: 
+					bc.mainMenu();
 				break;
 			}
 			
