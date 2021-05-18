@@ -25,6 +25,8 @@ public class JDBCTemplate {
 			
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			
+			// DriverManager.getConnection() 매개변수 : JDBC_url,"아이디","비밀번호"
+			// JDBC_URL 구성 = JDBC:oracle:thin:@IP주소:포트:SID
 			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "STUDENT", "STUDENT");
 			
 			// 트랜잭션 오토커밋 방지
